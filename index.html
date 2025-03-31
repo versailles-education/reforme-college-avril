@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éducation : Le gouvernement prolonge la période scolaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #00A6FF;
+            border-radius: 5px;
+        }
+        .content {
+            display: block; /* Modifié pour afficher en plein écran */
+            margin: 40px;
+        }
+        .main-article {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .advertisements {
+            margin-top: 30px;
+        }
+        .advertisements a {
+            display: block;
+            color: #003366;
+            text-decoration: none;
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        .advertisements a:hover {
+            color: #00A6FF;
+        }
+        .menu-link {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .department-links {
+            margin-top: 40px;
+        }
+        .department-links a {
+            display: block;
+            margin: 10px 0;
+            color: #003366;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .department-links a:hover {
+            color: #00A6FF;
+        }
+        .college-list {
+            margin-top: 20px;
+            display: none;
+        }
+        .college-list ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 15px;
+        }
+        .college-list ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .college-list ul li:before {
+            content: counter(college);
+            counter-increment: college;
+            margin-right: 10px;
+        }
+        .college-list ul {
+            counter-reset: college;
+        }
+        .modified-time {
+            font-size: 14px;
+            color: #777;
+            text-align: left;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleCollegeList(department) {
+            const list = document.getElementById(department);
+            list.style.display = list.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Versailles-Éducation</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Vidéos</a></li>
+        <li><a href="#">Politique</a></li>
+        <li><a href="#">Police-Justice</a></li>
+        <li><a href="#">International</a></li>
+        <li><a href="#">Société</a></li>
+        <li><a href="#">Économie</a></li>
+        <li><a href="#">Tech</a></li>
+        <li><a href="#">Auto</a></li>
+        <li><a href="#">Sport</a></li>
+        <li><a href="#">Santé</a></li>
+        <li><a href="#">People</a></li>
+        <li><a href="#">Régions</a></li>
+        <li><a href="#">Météo</a></li>
+        <li><a href="#">Newsletters</a></li>
+        <li><a href="#">Code promo</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <div class="main-article">
+        <h2 style="font-size: 28px;">Éducation : Le gouvernement prolonge la période scolaire pour certains collèges</h2>
+        <p class="modified-time">Modifié aujourd'hui à 7h00</p>
+        <p style="font-size: 20px;">Le gouvernement a annoncé une mesure inédite visant à prolonger la période scolaire dans certains collèges. Cette décision concerne les établissements où le nombre d’absences et de retards des élèves est jugé trop élevé, ainsi que ceux dont les résultats aux évaluations du deuxième trimestre et au brevet sont insuffisants.</p>
+
+        <p style="font-size: 20px;">Par ailleurs, les collèges où des problèmes de discipline récurrents sont signalés, comme des faits de violence ou une mauvaise attitude des élèves dans les couloirs, seront également concernés par cette prolongation.</p>
+
+        <p style="font-size: 20px;">Cette mesure vise à rétablir un climat scolaire plus serein et à offrir un temps d’apprentissage supplémentaire aux élèves en difficulté. Elle servira également de test pour une éventuelle refonte du calendrier scolaire dès l’année prochaine, avec une possible réduction des vacances.</p>
+
+        <p style="font-size: 20px;">Seule la liste des établissements parisiens, contraints de réduire leurs vacances d'avril d'une semaine, a été rendue publique pour le moment.</p>
+        <p style="font-size: 20px;">Ainsi, élèves comme professeurs débuteront leurs vacances le 18 avril, et non le 11 avril. Les établissements du reste de la France seront annoncés plus tard dans la journée.</p>
+
+        <!-- Image ajoutée ici avant le titre de la liste des collèges -->
+        <div class="image-container">
+            <img src="https://img.lemde.fr/2025/01/06/0/0/8256/5504/556/0/75/0/5777902_sirius-fs-upload-1-zp5bdxql46bm-1736179071952-740805.jpg" alt="Isabelle Borne">
+        </div>
+
+        <h3 style="font-size: 22px;">Liste des établissements parisiens concernés :</h3>
+        <div class="department-links">
+            <a href="javascript:void(0);" onclick="toggleCollegeList('Paris')">Paris (75)</a>
+            <div id="Paris" class="college-list">
+                <ul>
+                    <li>Collège Montaigne - Paris</li>
+                    <li>Collège Voltaire - Paris</li>
+                    <li>Collège Pierre Curie - Paris</li>
+                    <li>Collège Descartes - Paris</li>
+                    <li>Collège Saint-Exupéry - Paris</li>
+                    <li>Collège Paul Valéry - Paris</li>
+                    <li>Collège Victor Hugo - Paris</li>
+                    <li>Collège Raspail - Paris</li>
+                    <li>Collège La Fontaine - Paris</li>
+                    <li>Collège Molière - Paris</li>
+                </ul>
+            </div>
+
+              <a href="javascript:void(0);" onclick="toggleCollegeList('Hauts-de-Seine')">Hauts-de-Seine (92)</a>
+            <div id="Hauts-de-Seine" class="college-list">
+                <ul>
+                    <li>Collège Jean Jaurès - Nanterre</li>
+                    <li>Collège Pierre Brossolette - Levallois</li>
+                    <li>Collège Louis Aragon - Asnières</li>
+                    <li>Collège Marcel Pagnol - Clichy</li>
+                    <li>Collège Georges Brassens - Montrouge</li>
+                    <li>Collège Voltaire - Boulogne-Billancourt</li>
+                    <li>Collège Lavoisier - Puteaux</li>
+                    <li>Collège Paul Cézanne - Colombes</li>
+                    <li>Collège Simone Veil - Nanterre</li>
+                    <li>Collège Picasso - Courbevoie</li>
+                </ul>
+            </div>
+
+            <a href="javascript:void(0);" onclick="toggleCollegeList('Seine-Saint-Denis')">Seine-Saint-Denis (93)</a>
+            <div id="Seine-Saint-Denis" class="college-list">
+                <ul>
+                    <li>Collège Jean Moulin - Saint-Denis</li>
+                    <li>Collège Elsa Triolet - Montreuil</li>
+                    <li>Collège Pierre Bourdieu - Bobigny</li>
+                    <li>Collège Jaurès - La Courneuve</li>
+                    <li>Collège Louise Michel - Noisy-le-Sec</li>
+                    <li>Collège Paul Eluard - Montreuil</li>
+                    <li>Collège Gaston Bachelard - Bondy</li>
+                    <li>Collège Charles Péguy - Bobigny</li>
+                    <li>Collège Emile Zola - Aubervilliers</li>
+                    <li>Collège André Malraux - Saint-Ouen</li>
+                </ul>
+            </div>
+
+            <a href="javascript:void(0);" onclick="toggleCollegeList('Val-de-Marne')">Val-de-Marne (94)</a>
+            <div id="Val-de-Marne" class="college-list">
+                <ul>
+                    <li>Collège René Coty - Ivry-sur-Seine</li>
+                    <li>Collège Condorcet - Vincennes</li>
+                    <li>Collège Léon Blum - Créteil</li>
+                    <li>Collège Jules Verne - Nogent-sur-Marne</li>
+                    <li>Collège La Fontaine - Saint-Maur-des-Fossés</li>
+                    <li>Collège Pasteur - Champigny-sur-Marne</li>
+                    <li>Collège Pierre et Marie Curie - Alfortville</li>
+                    <li>Collège Montesquieu - Vincennes</li>
+                    <li>Collège Théodore Monod - Vitry-sur-Seine</li>
+                    <li>Collège Jean Jaurès - Charenton-le-Pont</li>
+                </ul>
+            </div>
+
+            <!-- Liste du Val d'Oise ajoutée ici -->
+            <a href="javascript:void(0);" onclick="toggleCollegeList('Val-d-Oise')">Val-d'Oise (95)</a>
+            <div id="Val-d-Oise" class="college-list">
+                <ul>
+                    <li>Gérard Philippe - Cergy</li>
+                    <li>Chanteraine - Sarcelles</li>
+                    <li>Henri Wallon - Bezons</li>
+                    <li>Collège Voltaire - Sarcelles</li>
+                    <li>François Truffaut - Gonesse</li>
+                    <li>Saint-Exupéry - Villiers-le-Bel</li>
+                    <li>Victor Hugo - Sarcelles</li>
+                    <li>Paul Éluard - Garges-lès-Gonesse</li>
+                    <li>Georges Brassens - Persan</li>
+                    <li>Claude Monnet - Argenteuil</li>
+                    <li>Michel de Montaigne - Goussainville</li>
+                </ul>
+            </div>
+        </div>
+
+<p style="font-size: 20px; font-style: italic; text-align: right;">Article rédigé par Sylvie Lecherbonnier</p>
+    </div>
+</div>
+
+  </div>
+</div>
+
+<footer>
+    <div class="advertisements">
+        <a href="#" class="menu-link">Autres articles  :</a>
+        <a href="#">Article 1 : Nouvelle réforme des retraites</a>
+        <a href="#">Article 2 : La crise du logement</a>
+        <a href="#">Article 3 : L'impact du télétravail sur les entreprises</a>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+<footer>
+    <p>&copy; 2025 Versailles-Éducation. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
